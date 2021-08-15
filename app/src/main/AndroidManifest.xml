@@ -11,7 +11,9 @@
         android:theme="@style/Theme.MyFirstApp">
         <activity
             android:name=".StepThreeActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            />
         <activity
             android:name=".StepTwoActivity"
             android:exported="true"
