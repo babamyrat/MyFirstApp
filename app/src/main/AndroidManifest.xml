@@ -10,15 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFirstApp">
         <activity
+            android:name=".StepThreeActivity"
+            android:exported="true" />
+        <activity
             android:name=".StepTwoActivity"
             android:exported="true"
-            android:parentActivityName=".MainActivity"
-            />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".StepOneActivity"
             android:exported="true"
-            android:parentActivityName=".MainActivity"
-            />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

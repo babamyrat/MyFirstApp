@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    CardView cardView, cardView2;
+    CardView cardView, cardView2, cardView3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         cardView = findViewById(R.id.cardClickOne);
         cardView2 = findViewById(R.id.cardClickTwo);
+        cardView3 = findViewById(R.id.cardClickThree);
 
         cardView.setOnClickListener(view ->
             startActivity(new Intent(MainActivity.this, StepOneActivity.class))
@@ -25,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
 
         cardView2.setOnClickListener(view ->
                 startActivity(new Intent(MainActivity.this, StepTwoActivity.class))
+        );
+
+        cardView3.setOnClickListener(view ->
+                startActivity(new Intent(MainActivity.this, StepThreeActivity.class))
         );
     }
 }
